@@ -1,0 +1,126 @@
+body {
+    background-color: #4A402E;
+    padding-bottom: 70px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+iframe._4by3 {
+    max-width: 420px;
+}
+iframe._16by9 {
+    max-width: 560px;
+}
+
+img.float-right {
+    float: right;
+}
+
+div.main-content-frame {
+    position: absolute;
+    right: 0;
+    left: 0;
+    border: 2px solid #352E21;
+    border-bottom: 5px solid #352E21;
+    background: #EEEEEE;
+    width: 70%;
+    margin: 0 auto 80px auto;
+}
+
+@media (max-width: 900px) {
+    div.main-content-frame {
+        position: absolute;
+        border: 2px solid #352E21;
+        border-bottom: 5px solid #352E21;
+        background: #EEEEEE;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+div.main-content {
+    max-width: 1000px;
+    padding: 1px 30px 30px 30px;
+    color: #000000;
+}
+
+span.download-descriptor-icon {
+    padding-left: 5px;
+}
+
+div.social-icons {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+ul.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.social-icon {
+    display: inline;
+}
+
+li.social-icon>a {
+    color: #9d9d9d;
+}
+
+li.social-icon>a:hover {
+    color: #fff;
+}
+
+ul.projects-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+img.portrait {
+    float: right;
+    padding-left: 5px;
+}
+
+download-list>ul {
+    padding-right: 15px;
+}
+
+/*
+  Allow angular.js to be loaded in body, hiding cloaked elements until
+  templates compile.  The !important is important given that there may be
+  other selectors that are more specific or come later and might alter display.
+ */
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none !important;
+}
+
+/* BOOTSTRAP OVERRIDES */
+
+div.page-header {
+    border-bottom: 1px solid #ddd;
+}
+
+blockquote {
+    border-left: 5px solid #ddd;
+}
+
+.jumbotron {
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    background-color: #ddd;
+}
+
+/* FONTAWESOME OVERRIDES */
+
+.fa-border {
+    border: solid 0.08em #ddd;
+}
